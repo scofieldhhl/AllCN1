@@ -1047,9 +1047,10 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
 //                    if (mSettings.getUsingOpenSLES()) {
                     //ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "videotoolbox", 1);//0为软解,1为硬解
 
-                        ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "opensles", 0);
-
+                    //解决花屏问题 probesize参数原值4096
+                    ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "opensles", 0);
                     ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_FORMAT, "probesize", 8192);//探针的大小,网上有两个版本probesize和probsize都不知道那个对,有人了解的麻烦提出来.
+                    //解决花屏问题 END
 //                    } else {
 //                        ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "opensles", 0);
 //                    }
