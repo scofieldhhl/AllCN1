@@ -1030,7 +1030,7 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
                 IjkMediaPlayer ijkMediaPlayer = null;
                 if (mUri != null) {
                     ijkMediaPlayer = new IjkMediaPlayer();
-                    ijkMediaPlayer.native_setLogLevel(IjkMediaPlayer.IJK_LOG_DEBUG);
+//                    ijkMediaPlayer.native_setLogLevel(IjkMediaPlayer.IJK_LOG_DEBUG);
 
 //                    if (mSettings.getUsingMediaCodec()) {
                         //ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "mediacodec", 0);
@@ -1062,10 +1062,10 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
                     //解决花屏问题 END
                     //实现播放秒播
                     ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_FORMAT, "analyzemaxduration", 100L);//新增
-                    ijkMediaPlayer.setOption(1, "probesize", 10240L);
-                    ijkMediaPlayer.setOption(1, "flush_packets", 1L);
-                    ijkMediaPlayer.setOption(4, "packet-buffering", 0L);
-                    ijkMediaPlayer.setOption(4, "framedrop", 1L);
+//                    ijkMediaPlayer.setOption(1, "probesize", 10240L);
+//                    ijkMediaPlayer.setOption(1, "flush_packets", 1L);
+//                    ijkMediaPlayer.setOption(4, "packet-buffering", 0L);
+//                    ijkMediaPlayer.setOption(4, "framedrop", 1L);
                     //实现播放秒播END
                     //实现播放265 hevc
                     ijkMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "mediacodec", 1);
