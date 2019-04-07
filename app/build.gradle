@@ -19,7 +19,7 @@ android {
         buildConfigField("String", "ID_HEAD", "\"11\"")
         multiDexEnabled true
         ndk {
-            abiFilters("armeabi","armeabi-v7a", "x86")
+            abiFilters("armeabi", "armeabi-v7a", "armeabi-v8a", "x86")
         }
     }
     buildTypes {
