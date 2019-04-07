@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tips_bg">
+
+    <TextView
+        android:id="@+id/op_app_name"
+        android:layout_width="520pt"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="35pt"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25pt"/>
+    
+    <Button
+        android:id="@+id/op_change_btn"
+        android:layout_width="130pt"
+        android:layout_height="55pt"
+        android:textSize="25pt"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/op_btn_bg"
+        android:layout_marginLeft="50pt"
+        android:layout_marginBottom="40pt"/>
+
+    <Button
+        android:id="@+id/op_delete_btn"
+        android:layout_width="130pt"
+        android:layout_height="55pt"
+        android:textSize="25pt"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/op_btn_bg"
+        android:layout_marginRight="50pt"
+        android:layout_marginBottom="40pt"
+        android:text="@string/exit"/>
+</FrameLayout>

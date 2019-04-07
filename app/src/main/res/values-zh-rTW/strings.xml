@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">魅力影視</string>
+    <string name="live">直播</string>
+    <string name="playback">回看</string>
+    <string name="yy_world">粵語視界</string>
+    <string name="ys_first">影視先鋒</string>
+    <string name="children_dm">少兒動漫</string>
+    <string name="hot_re">熱門推薦</string>
+    <string name="lg_yy">藍光影院</string>
+    <string name="hot_topics">熱門專題</string>
+    <string name="set_mgr">設置管理</string>
+    <string name="jl_sc">記錄/收藏</string>
+    <string name="zx_dy">最新電影</string>
+    <string name="zx_zj">最新追劇</string>
+    <string name="dy_bl">電影部落</string>
+    <string name="rb_jj">熱播劇集</string>
+    <string name="ty_jj">體育競技</string>
+    <string name="ml_jl">魅力記錄</string>
+    <string name="zy_bs">綜藝巴士</string>
+    <string name="page_fmt">%1$d/%2$d頁</string>
+    <string name="search">搜索</string>
+    <string name="update_to_ji">更新至%1$s集</string>
+    <string name="play">播放</string>
+    <string name="fav">收藏</string>
+    <string name="unfav">取消</string>
+    <string name="xj">選集</string>
+    <string name="collection_op_tips">按 "菜單" 鍵切換順序</string>
+    <string name="details_press_tips">按menu鍵切換倒序</string>
+    <string name="click_menu_switch">按menu切換排序</string>
+    <string name="movie">電影</string>
+    <string name="jj">劇集</string>
+    <string name="zy">綜藝</string>
+    <string name="zt">專題</string>
+    <string name="dy_fmt">導演:\u0020\u0020\u0020%1$s</string>
+    <string name="zy_fmt">主演:\u0020\u0020%1$s</string>
+    <string name="lx_fmt">類型:\u0020\u0020\u0020%1$s</string>
+    <string name="js_fmt">集數:\u0020\u0020%1$s集</string>
+    <string name="intro">劇情介紹:\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="intro_nospace">劇情介紹:\n%1$s</string>
+    <string name="sedh">少兒動畫</string>
+    <string name="egyy">兒歌音樂</string>
+    <string name="dmdy">動漫電影</string>
+    <string name="dmjj">動漫劇集</string>
+    <string name="xxjy">學習教育</string>
+    <string name="mxzq">明星專區</string>
+    <string name="xgtj">相關推薦</string>
+    <string name="sedm_dy_fmt">導\u0020\u0020\u0020\u0020演:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="sedm_yz_fmt">原\u0020\u0020\u0020\u0020作:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="sedm_dq_fmt">地\u0020\u0020\u0020\u0020區:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="sedm_lx_fmt">類\u0020\u0020\u0020\u0020型:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="end">播放完畢</string>
+    <string name="set_and_mgr">設置管理</string>
+    <string name="clear_cache">清理緩存</string>
+    <string name="sys_update">系統升級</string>
+    <string name="about_us">關於我們</string>
+    <string name="yypy">粵語配音</string>
+    <string name="bfsj">繽紛世界</string>
+    <string name="card_no_hint">卡號.</string>
+    <string name="card_ps_hint">密碼</string>
+    <string name="ok">確定</string>
+    <string name="exit">退出</string>
+    <string name="paying">充值中, 請等待</string>
+    <string name="press_ok_show_live_list">按 \"OK鍵\" 顯示節目列表</string>
+    <string name="play_act_title_fmt">%1$s - %2$d集</string>
+    <string name="movie_not_exists">該影片不存在</string>
+    <string name="yyzt">粵語專題</string>
+    <string name="zhzt">綜合專題</string>
+    <string name="ysys">飲食養生</string>
+    <string name="latest_ver">已經是新版本</string>
+    <string name="clear_over">清除完畢</string>
+    <string name="about_all_content">關於軟件\n\n本軟件致力於提供互聯網流媒體節目，以海量精彩内容和卓越的使用體驗爲用戶帶來極緻視聽享受。</string>
+    <string name="about_live_content">本軟件致力於提供互聯網流媒體節目，以海量精彩内容和卓越的使用體驗爲用戶帶來極緻視聽享受。\n\n軟件版本: %1$s</string>
+    <string name="about">關於</string>
+    <string name="subscription">天數</string>
+    <string name="mac">Mac</string>
+    <string name="version">版本</string>
+    <string name="clear_data">清除緩存</string>
+    <string name="history_page">歷史記錄</string>
+    <string name="fav_list">收藏列表</string>
+    <string name="category">節目列表</string>
+    <string name="all_kind_name">全部</string>
+    <string name="live_epg_now">當前節目:</string>
+    <string name="live_epg_next">下個節目:</string>
+    <string name="fav_chal_tips">收藏這個節目嗎?</string>
+    <string name="unfav_chal_tips">取消收藏這個節目嗎?</string>
+    <string name="invalid_chal_num">無效頻道號</string>
+    <string name="long_time_tips">2004:Are you here?\nPlease enter the number shown in the picture</string>
+    <string name="press_back_again">再按一次返回鍵退出程序</string>
+    <string name="again_back_live">再按一次返回鍵退出直播</string>
+    <string name="again_back_playback" >再按一次返回鍵退出全屏</string>
+    <string name="net_bad">網絡連接失敗, 請檢查網絡</string>
+    <string name="playback_yy">粵語</string>
+    <string name="playback_dl">大陸</string>
+    <string name="playback_zh">綜合</string>
+    <string name="playback_cur_pd">當前頻道：</string>
+    <string name="playback_cur_jm">當前節目：</string>
+    <string-array name="playback_week_arr">
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string name="playback_week_fmt">MM月dd日\nEEEE</string>
+    <string name="more">更多</string>
+    <string name="ser_con_err_tips">2002:服務器連接失敗%1$s</string>
+    <string name="no_net">1002:網絡鏈接失敗</string>
+    <string name="expired">1003:已到期\n(%1$s)</string>
+    <string name="again_back_play">再按一次返回鍵退出視頻播放</string>
+    <string-array name="sedm_kind_name_arr">
+        <item>少兒動畫</item>
+        <item>兒歌音樂</item>
+        <item>學習教育</item>
+        <item>明星專區</item>
+        <item>動漫電影</item>
+        <item>動漫劇集</item>
+    </string-array>
+    <string-array name="fav_history_name_arr">
+        <item>影片收藏</item>
+        <item>專題收藏</item>
+        <item>記錄</item>
+    </string-array>
+    <string-array name="yysj_yyxf_pkind_name_arr">
+        <item>粵語視界</item>
+        <item>影音先鋒</item>
+        <item>藍光影院</item>
+    </string-array>
+    <string-array name="sedm_pkind_name_arr">
+        <item>少兒動漫</item>
+    </string-array>
+    <string-array name="home_kind_name_arr">
+        <item>直播</item>
+        <item>回看</item>
+        <item>少兒動漫</item>
+        <item>影視先鋒</item>
+        <item>少兒動漫</item>
+        <item>熱門推薦</item>
+        <item>藍光影院</item>
+        <item>熱門專題</item>
+        <item>設置管理</item>
+    </string-array>
+    <string-array name="yysj_kind_name_arr">
+        <item>電影部落</item>
+        <item>熱播劇集</item>
+        <item>綜藝巴士</item>
+        <item>最新電影</item>
+        <item>最新追劇</item>
+        <item>記錄/收藏</item>
+    </string-array>
+    <string-array name="yyxf_kind_name_arr">
+        <item>記錄/收藏</item>
+        <item>最新電影</item>
+        <item>最新追劇</item>
+        <item>電影部落</item>
+        <item>熱播劇集</item>
+        <item>體育競技</item>
+        <item>魅力記錄</item>
+        <item>綜藝巴士</item>
+    </string-array>
+    <string-array name="lgyy_kind_name_arr">
+        <item>藍光影院</item>
+    </string-array>
+
+    <string name="previous_page">上一頁</string>
+    <string name="next_page">下一頁</string>
+    <string name="enshrine">收藏</string>
+</resources>

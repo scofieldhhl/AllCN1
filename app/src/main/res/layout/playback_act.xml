@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:background="@drawable/playback_main_bg">
+
+    <ImageView
+        android:id="@+id/playback_net_v"
+        android:layout_width="33pt"
+        android:layout_height="33pt"
+        android:layout_marginTop="17pt"
+        android:layout_marginRight="10pt"
+        android:layout_toLeftOf="@+id/playback_time_v"
+        android:background="@drawable/wifi_ok"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/playback_time_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15pt"
+        android:layout_marginRight="47pt"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="26pt"
+        android:textStyle="bold"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/playback_yy_title_v"
+        style="@style/PLAYBACK_TITLE_STYLE"
+        android:layout_marginLeft="@dimen/playback_yy_title_v_marginLeft"
+        android:nextFocusLeft="@+id/playback_yy_title_v"
+        android:nextFocusUp="@+id/playback_yy_title_v"
+        android:text="@string/playback_yy" />
+
+    <TextView
+        android:id="@+id/playback_zh_title_v"
+        style="@style/PLAYBACK_TITLE_STYLE"
+        android:layout_marginLeft="@dimen/playback_zh_title_v_marginLeft"
+        android:layout_toRightOf="@+id/playback_yy_title_v"
+        android:nextFocusRight="@+id/playback_zh_title_v"
+        android:nextFocusUp="@+id/playback_zh_title_v"
+        android:text="@string/playback_zh" />
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/playback_left_list_v"
+        android:layout_width="335pt"
+        android:layout_height="555pt"
+        android:layout_below="@+id/playback_yy_title_v"
+        android:layout_marginLeft="70pt"
+        android:layout_marginTop="10pt"
+        android:background="@drawable/playback_left_list_bg"
+        android:paddingLeft="7pt"
+        android:paddingTop="15pt"
+        android:paddingRight="13pt"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:id="@+id/playback_video_root_v"
+        android:layout_width="379pt"
+        android:layout_height="240pt"
+        android:layout_marginLeft="47pt"
+        android:layout_marginTop="60pt"
+        android:layout_toRightOf="@+id/playback_left_list_v"
+        android:descendantFocusability="blocksDescendants"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@id/playback_video_root_v"
+        android:nextFocusRight="@id/playback_video_root_v">
+
+        <com.mast.lib.views.VideoView
+            android:id="@+id/playback_video_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/play_status_v"
+            android:layout_width="150pt"
+            android:layout_height="150pt"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/play_tips_v"
+            android:layout_width="200pt"
+            android:layout_height="100pt"
+            android:layout_gravity="center"
+            android:background="@drawable/tips_bg"
+            android:gravity="center"
+            android:text="@string/end"
+            android:textColor="@android:color/white"
+            android:textSize="50pt"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/play_bottom_ctrl_root_v"
+            android:layout_width="match_parent"
+            android:layout_height="170pt"
+            android:layout_gravity="bottom"
+            android:background="@drawable/play_bottom_bg"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/play_ctrl_root_v"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/play_ctrl_title_v"
+                    android:layout_width="800pt"
+                    android:layout_height="50pt"
+                    android:layout_marginLeft="30pt"
+                    android:layout_marginTop="10pt"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="38pt" />
+
+                <TextView
+                    android:id="@+id/play_ctrl_epg_v"
+                    android:layout_width="800pt"
+                    android:layout_height="40pt"
+                    android:layout_below="@+id/play_ctrl_title_v"
+                    android:layout_marginLeft="30pt"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="30pt" />
+
+                <TextView
+                    android:id="@+id/play_ctrl_cur_time_v"
+                    android:layout_width="100pt"
+                    android:layout_height="30pt"
+                    android:layout_below="@+id/play_ctrl_epg_v"
+                    android:layout_marginLeft="20pt"
+                    android:layout_marginTop="7pt"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/white"
+                    android:textSize="22pt" />
+
+                <TextView
+                    android:id="@+id/play_ctrl_speed_v"
+                    android:layout_width="180pt"
+                    android:layout_height="30pt"
+                    android:layout_alignBottom="@+id/play_ctrl_epg_v"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginRight="20pt"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20pt" />
+
+                <TextView
+                    android:id="@+id/play_ctrl_total_time_v"
+                    android:layout_width="100pt"
+                    android:layout_height="30pt"
+                    android:layout_below="@+id/play_ctrl_speed_v"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="7pt"
+                    android:layout_marginRight="20pt"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/white"
+                    android:textSize="22pt" />
+
+                <com.allcn.views.UiSeeKBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="@dimen/seekbar_w"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/play_ctrl_epg_v"
+                    android:layout_marginLeft="@dimen/seekbar_marginLeft"
+                    android:layout_marginTop="@dimen/seekbar_marginTop"
+                    android:layout_toRightOf="@+id/play_ctrl_cur_time_v"
+                    android:maxHeight="@dimen/seekbar_max_h"
+                    android:minHeight="@dimen/seekbar_min_h"
+                    android:progressDrawable="@drawable/seek"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/seek_thumb"
+                    app:numTextColor="#FFFFFF"
+                    app:numTextSize="0pt"
+                    app:numType="bottom"
+                    app:numbackground="@drawable/kj" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/playback_cur_pd_head_v"
+        style="@style/PLAYBACK_CUR_PD_HEAD_STYLE"
+        android:layout_marginTop="73pt"
+        android:text="@string/playback_cur_pd" />
+
+    <TextView
+        android:id="@+id/playback_cur_pd_v"
+        style="@style/PLAYBACK_CUR_PD_STYLE"
+        android:textSize="28pt"
+        android:layout_below="@+id/playback_cur_pd_head_v"
+        android:layout_marginTop="10pt" />
+
+    <TextView
+        android:id="@+id/playback_cur_jm_head_v"
+        style="@style/PLAYBACK_CUR_PD_HEAD_STYLE"
+        android:layout_below="@+id/playback_cur_pd_v"
+        android:layout_marginTop="30pt"
+        android:text="@string/playback_cur_jm" />
+
+    <TextView
+        android:id="@+id/playback_cur_jm_v"
+        style="@style/PLAYBACK_CUR_PD_STYLE"
+        android:textSize="22pt"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_below="@+id/playback_cur_jm_head_v"
+        android:layout_marginTop="10pt" />
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/playback_chal_list_v"
+        android:layout_width="767pt"
+        android:layout_height="325pt"
+        android:layout_below="@+id/playback_video_root_v"
+        android:layout_marginLeft="47pt"
+        android:layout_marginTop="45pt"
+        android:layout_toRightOf="@+id/playback_left_list_v"
+        android:background="@drawable/playback_right_list_bg"
+        android:paddingTop="30pt" />
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/playback_week_list_v"
+        android:layout_width="737pt"
+        android:layout_height="63pt"
+        android:paddingLeft="15pt"
+        android:paddingTop="12pt"
+        android:paddingBottom="12pt"
+        android:paddingRight="15pt"
+        android:layout_below="@+id/playback_video_root_v"
+        android:layout_marginLeft="62pt"
+        android:layout_marginTop="15pt"
+        android:layout_toRightOf="@+id/playback_left_list_v"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+</RelativeLayout>

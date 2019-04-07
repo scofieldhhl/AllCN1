@@ -1,0 +1,469 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="welcomeTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/start1</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="HOME_BTN_STYLE">
+        <item name="android:layout_width">100pt</item>
+        <item name="android:layout_height">130pt</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">24pt</item>
+        <item name="android:layout_marginRight">5pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20pt</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="stv_state_drawable_mode">top</item>
+        <item name="stv_state_drawable2_mode">top</item>
+        <item name="stv_isShowState">true</item>
+        <item name="stv_state_drawable_height">94pt</item>
+        <item name="stv_state_drawable_width">94pt</item>
+        <item name="stv_state_drawable2_height">94pt</item>
+        <item name="stv_state_drawable2_width">94pt</item>
+        <item name="stv_state_drawable_padding_top">4pt</item>
+        <item name="stv_state_drawable2_padding_top">4pt</item>
+    </style>
+
+    <style name="HOME_TEXT_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20pt</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">7pt</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="HOME_IMG_STYLE">
+        <item name="android:layout_width">94pt</item>
+        <item name="android:layout_height">94pt</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">4pt</item>
+    </style>
+
+    <style name="HOME_ROOT_STYLE">
+        <item name="android:layout_width">100pt</item>
+        <item name="android:layout_height">130pt</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">24pt</item>
+        <item name="android:layout_marginRight">5pt</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+    </style>
+
+    <style name="TOPICS_HOME_ROOT_STYLE">
+        <item name="android:layout_width">100pt</item>
+        <item name="android:layout_height">130pt</item>
+        <item name="android:layout_marginRight">30pt</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="YSXF_SMALL_STYLE">
+        <item name="android:layout_width">141pt</item>
+        <item name="android:layout_height">141pt</item>
+        <item name="android:layout_marginLeft">55pt</item>
+        <item name="android:textSize">25pt</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">7pt</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="YSXF_VERTICAL_BIG_STYLE">
+        <item name="android:layout_width">287pt</item>
+        <item name="android:layout_height">473pt</item>
+        <item name="android:textSize">32pt</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingLeft">115pt</item>
+        <item name="android:paddingBottom">17pt</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="YSXF_HORIZONTAL_BIG_STYLE">
+        <item name="android:layout_width">397pt</item>
+        <item name="android:layout_height">275pt</item>
+        <item name="android:textSize">26pt</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:paddingLeft">23pt</item>
+        <item name="android:paddingBottom">35pt</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="YSXF_MIDDDLE_BIG_STYLE">
+        <item name="android:layout_width">187pt</item>
+        <item name="android:layout_height">175pt</item>
+        <item name="android:textSize">26pt</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">13pt</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="YYSJ_MIDDDLE_BIG_STYLE">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">181pt</item>
+        <item name="android:textSize">32pt</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">7pt</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_marginTop">14pt</item>
+        <item name="android:layout_marginLeft">24pt</item>
+    </style>
+
+    <style name="KIND_MENU_ROOT_STYLE">
+        <item name="android:layout_width">@dimen/kind_movie_kind_v_w</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="KIND_MENU_RV_STYLE">
+        <item name="android:layout_width">@dimen/kind_movie_kind_v_w</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/kind_movie_title_v_h</item>
+    </style>
+
+    <style name="DETAILS_DY_TEXT_STYLE">
+        <item name="android:layout_width">300pt</item>
+        <item name="android:layout_height">30pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20pt</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SEDM_DETAILS_DY_TEXT_STYLE" parent="DETAILS_DY_TEXT_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">5pt</item>
+        <item name="android:layout_height">25pt</item>
+        <item name="android:textSize">18pt</item>
+        <item name="android:textColor">@color/sedm_movie_details_text_red_color</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="DETAILS_ZY_TEXT_STYLE" parent="DETAILS_DY_TEXT_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingRight">60pt</item>
+        <item name="android:layout_marginLeft">12pt</item>
+    </style>
+
+    <style name="DETAILS_BTN_STYLE">
+        <item name="android:layout_width">@dimen/details_play_width</item>
+        <item name="android:layout_height">60pt</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30pt</item>
+        <item name="android:layout_marginLeft">26pt</item>
+        <item name="android:layout_marginTop">50pt</item>
+        <item name="android:paddingRight">15pt</item>
+        <item name="android:layout_below">@+id/details_jj_v</item>
+    </style>
+
+    <style name="SEDM_DETAILS_BTN_STYLE" parent="DETAILS_BTN_STYLE">
+        <item name="android:layout_width">@dimen/sedm_details_btn_width</item>
+        <item name="android:layout_height">70pt</item>
+        <item name="android:layout_marginTop">13pt</item>
+        <item name="android:layout_marginLeft">37pt</item>
+        <item name="android:layout_below">@+id/sedm_details_jj_v</item>
+        <item name="android:textColor">@color/sedm_movie_details_btn_text_color</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="DETAILS_JS_HEADER_STYLE">
+        <item name="android:layout_width">131pt</item>
+        <item name="android:layout_height">50pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22pt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">70pt</item>
+        <item name="android:background">@drawable/details_js_header_bg</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="DETAILS_JS_RV_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50pt</item>
+        <item name="android:layout_marginLeft">20pt</item>
+    </style>
+
+    <style name="HOT_RE_DY_STYLE">
+        <item name="android:layout_width">448pt</item>
+        <item name="android:layout_height">216pt</item>
+        <item name="android:layout_marginLeft">133pt</item>
+        <item name="android:layout_marginTop">146pt</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:lineSpacingExtra">10pt</item>
+        <item name="android:background">#40ff0000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingTop">50pt</item>
+        <item name="android:paddingLeft">260pt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="SEDH_STYLE">
+        <item name="android:layout_marginTop">@dimen/sedm_main_sedh_v_marginTop</item>
+        <item name="android:background">#40ff0000</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:textColor">@color/sedm_main_text_color</item>
+        <item name="android:textSize">27pt</item>
+        <item name="android:layout_below">@+id/sedm_main_title_v</item>
+        <item name="android:layout_marginLeft">24pt</item>
+        <item name="android:paddingBottom">17pt</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="DMDY_STYLE" parent="SEDH_STYLE">
+        <item name="android:layout_width">206pt</item>
+        <item name="android:layout_height">162pt</item>
+        <item name="android:layout_marginTop">13pt</item>
+    </style>
+
+    <style name="MXZQ_ITEM_STYLE">
+        <item name="android:layout_width">136pt</item>
+        <item name="android:layout_height">176pt</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">0pt</item>
+        <item name="android:layout_marginBottom">20pt</item>
+        <item name="android:textSize">26pt</item>
+        <item name="android:textColor">@color/mxzq_text_color</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">16pt</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="SEDM_KIND_MENU_ROOT_STYLE">
+        <item name="android:layout_width">@dimen/sedm_kind_movie_kind_v_w</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/sedm_kind_movie_title_v_h</item>
+        <item name="android:descendantFocusability">afterDescendants</item>
+    </style>
+
+    <style name="SEDM_KIND_ROOT_STYLE">
+        <item name="android:layout_width">@dimen/sedm_kind_movie_kind_v_w</item>
+        <item name="android:layout_height">503pt</item>
+        <item name="android:layout_marginTop">@dimen/sedm_kind_root_marginTop</item>
+        <item name="android:descendantFocusability">afterDescendants</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="SEDM_KIND_BG_STYLE">
+        <item name="android:layout_width">33pt</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:background">@drawable/sedm_kind_bg</item>
+    </style>
+
+    <style name="SEDM_KIND_RV_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_marginTop">@dimen/sedm_kind_movie_kind_first_topOffset</item>
+        <item name="android:layout_marginBottom">@dimen/sedm_kind_movie_kind_topOffset</item>
+        <item name="android:tag">2</item>
+    </style>
+
+    <declare-styleable name="ImageTextView">
+        <attr name="drawable" format="reference" />
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
+        <attr name="position" format="integer" />
+    </declare-styleable>
+
+    <style name="MenuDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="PAY_EDIT_STYLE">
+        <item name="android:layout_width">300pt</item>
+        <item name="android:layout_height">40pt</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/pay_edit_bg</item>
+        <item name="android:paddingLeft">20pt</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">25pt</item>
+        <item name="android:textColorHint">#aaa9a9</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PAY_BTN_STYLE">
+        <item name="android:layout_width">120pt</item>
+        <item name="android:layout_height">40pt</item>
+        <item name="android:background">@drawable/pay_btn_bg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TipsDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@drawable/tips_bg</item>
+    </style>
+
+    <style name="SET_TEXT_V_STYLE">
+        <item name="android:layout_width">267pt</item>
+        <item name="android:layout_height">513pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">32pt</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">157pt</item>
+        <item name="android:layout_marginTop">160pt</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="TOPICS_KIND_NAME_STYLE">
+        <item name="android:layout_width">200pt</item>
+        <item name="android:layout_height">60pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/topics_kind_1_text_size</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="MAIN_KIND_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60pt</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:textSize">28pt</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TIPS_DIALOG_STYLE" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="LIVE_IMG_ID_STYLE">
+        <item name="android:layout_width">57pt</item>
+        <item name="android:layout_height">86pt</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="PLAYBACK_TITLE_STYLE">
+        <item name="android:layout_width">@dimen/playback_yy_title_v_width</item>
+        <item name="android:layout_height">53pt</item>
+        <item name="android:textSize">@dimen/playback_yy_title_v_textSize</item>
+        <item name="android:textColor">@color/playback_title_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/playback_title_marginTop</item>
+        <item name="android:background">@drawable/playback_title_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="PLAYBACK_CUR_PD_HEAD_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">27pt</item>
+        <item name="android:textSize">19pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">63pt</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_toRightOf">@+id/playback_video_root_v</item>
+    </style>
+
+    <style name="PLAYBACK_CUR_PD_STYLE" parent="@style/PLAYBACK_CUR_PD_HEAD_STYLE">
+        <item name="android:layout_height">53pt</item>
+        <item name="android:textSize">40pt</item>
+    </style>
+
+    <style name="Kind_movie_root_style">
+        <item name="android:background">@drawable/kind_movie_item_bg</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="Hot_Re_movie_item_text_style">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Kind_movie_item_text_style">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">20pt</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

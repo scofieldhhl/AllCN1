@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/set_and_mgr"
+        android:textColor="@android:color/white"
+        android:textSize="40pt"
+        android:layout_marginLeft="53pt"
+        android:layout_marginTop="50pt"/>
+
+    <ImageView
+        android:id="@+id/set_net_v"
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:layout_marginTop="22pt"
+        android:layout_marginRight="19pt"
+        android:layout_toLeftOf="@+id/set_time_v"
+        android:background="@drawable/wifi_ok"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/set_time_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18pt"
+        android:layout_marginRight="40pt"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="45pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/set_update_v"
+        style="@style/SET_TEXT_V_STYLE"
+        android:text="@string/sys_update"
+        android:layout_toLeftOf="@+id/set_cache_v"
+        android:layout_marginRight="113pt"/>
+
+    <TextView
+        android:id="@+id/set_cache_v"
+        style="@style/SET_TEXT_V_STYLE"
+        android:text="@string/clear_cache"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/set_about_v"
+        style="@style/SET_TEXT_V_STYLE"
+        android:text="@string/about_us"
+        android:layout_toRightOf="@+id/set_cache_v"
+        android:layout_marginLeft="113pt"/>
+</RelativeLayout>

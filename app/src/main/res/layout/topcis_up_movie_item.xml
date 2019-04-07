@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="175pt"--><!--android:layout_height="250pt"--><!--android:elevation="10pt">-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10pt"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_margin="50pt">
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/topics_up_movie_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="5pt"
+        android:text="更新至10000集"
+        android:textColor="@android:color/white"
+        android:textSize="16pt"
+        app:stv_corner="7pt"
+        app:stv_isShowState2="true"
+        app:stv_state_drawable2="@drawable/update_to_bg"
+        app:stv_state_drawable2_height="40pt"
+        app:stv_state_drawable2_mode="top"
+        app:stv_state_drawable2_width="175pt" />
+
+    <TextView
+        android:id="@+id/topics_up_movie_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="39pt"
+        android:layout_gravity="bottom"
+        android:background="@drawable/movie_item_name_bg"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="功夫熊猫3"
+        android:textColor="@android:color/white"
+        android:textSize="24pt" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60pt"
+    android:ellipsize="marquee"
+    android:layout_margin="10pt"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:singleLine="true"
+    android:textColor="@android:color/white"
+    android:textSize="19pt" />

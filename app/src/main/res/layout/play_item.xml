@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="62dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_item_bg"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"/>

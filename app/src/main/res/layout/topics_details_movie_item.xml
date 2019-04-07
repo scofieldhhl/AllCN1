@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="175pt"--><!--android:layout_height="250pt"--><!--android:elevation="10pt">-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165pt"
+    android:layout_height="225pt"
+    android:elevation="10pt"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/topics_details_movie_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/topics_details_movie_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:background="@drawable/update_to_bg"
+        android:gravity="center_horizontal"
+        android:paddingTop="5pt"
+        android:textColor="@android:color/white"
+        android:textSize="16pt"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/topics_details_movie_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="39pt"
+        android:layout_gravity="bottom"
+        android:background="@drawable/movie_item_name_bg"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="24pt" />
+</FrameLayout>

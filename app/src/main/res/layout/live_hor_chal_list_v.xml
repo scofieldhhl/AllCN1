@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.LiveAct">
+
+    <LinearLayout
+        android:id="@+id/list1_root_v"
+        android:layout_width="@dimen/list1_big_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_list_bg"
+        android:orientation="vertical"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt">
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/about_us_v"
+            style="@style/MAIN_KIND_STYLE"
+            android:layout_marginTop="30pt"
+            android:layout_marginLeft="10pt"
+            android:nextFocusLeft="@+id/about_us_v"
+            android:nextFocusRight="@+id/about_us_v"
+            android:nextFocusUp="@+id/about_us_v"
+            android:nextFocusDown="@+id/favorite_v"
+            android:textColor="@color/white"
+            android:paddingRight="@dimen/about_us_v_paddingRight"
+            android:text="@string/about_us"
+            app:stv_isShowState="true"
+            app:stv_isShowState2="false"
+            app:stv_state_drawable="@drawable/aboutus_nofocus"
+            app:stv_state_drawable2="@drawable/aboutus_focus"
+            app:stv_state_drawable2_height="32pt"
+            app:stv_state_drawable2_mode="left"
+            app:stv_state_drawable2_padding_left="18pt"
+            app:stv_state_drawable2_width="32pt"
+            app:stv_state_drawable_height="32pt"
+            app:stv_state_drawable_mode="left"
+            app:stv_state_drawable_padding_left="18pt"
+            app:stv_state_drawable_width="32pt" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/favorite_v"
+            style="@style/MAIN_KIND_STYLE"
+            android:layout_marginLeft="10pt"
+            android:nextFocusLeft="@+id/favorite_v"
+            android:nextFocusRight="@+id/favorite_v"
+            android:nextFocusUp="@+id/about_us_v"
+            android:nextFocusDown="@+id/category_v"
+            android:paddingRight="@dimen/favorite_v_paddingRight"
+            android:textColor="@color/white"
+            android:text="@string/fav_list"
+            app:stv_isShowState="true"
+            app:stv_isShowState2="false"
+            app:stv_state_drawable="@drawable/favorite_nofocus"
+            app:stv_state_drawable2="@drawable/favorite_focus"
+            app:stv_state_drawable2_height="32pt"
+            app:stv_state_drawable2_mode="left"
+            app:stv_state_drawable2_padding_left="18pt"
+            app:stv_state_drawable2_width="32pt"
+            app:stv_state_drawable_height="32pt"
+            app:stv_state_drawable_mode="left"
+            app:stv_state_drawable_padding_left="18pt"
+            app:stv_state_drawable_width="32pt" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/category_v"
+            style="@style/MAIN_KIND_STYLE"
+            android:layout_marginLeft="10pt"
+            android:nextFocusLeft="@+id/category_v"
+            android:nextFocusRight="@+id/category_v"
+            android:nextFocusUp="@+id/favorite_v"
+            android:nextFocusDown="@+id/list1_rv"
+            android:textColor="@color/white"
+            android:paddingRight="@dimen/category_v_paddingRight"
+            android:text="@string/category"
+            app:stv_isShowState="true"
+            app:stv_isShowState2="false"
+            app:stv_state_drawable="@drawable/category_nofocus"
+            app:stv_state_drawable2="@drawable/category_focus"
+            app:stv_state_drawable2_height="32pt"
+            app:stv_state_drawable2_mode="left"
+            app:stv_state_drawable2_padding_left="18pt"
+            app:stv_state_drawable2_width="32pt"
+            app:stv_state_drawable_height="32pt"
+            app:stv_state_drawable_mode="left"
+            app:stv_state_drawable_padding_left="18pt"
+            app:stv_state_drawable_width="32pt" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list1_rv"
+            android:layout_width="160pt"
+            android:layout_height="440pt"
+            android:scrollbars="none"
+            android:layout_marginLeft="45pt" />
+        <ImageView
+            android:id="@+id/list1_more"
+            android:layout_width="160pt"
+            android:layout_height="20pt"
+            android:layout_marginLeft="45pt"
+            android:scaleType="centerInside"
+            android:src="@drawable/xia" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/list2_root_v"
+        android:layout_width="378pt"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_list_bg1">
+
+        <TextView
+            android:id="@+id/list2_tips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="28pt"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/list2_kind_v"
+            android:layout_width="170pt"
+            android:layout_height="35pt"
+            android:layout_marginTop="40pt"
+            android:background="#00ff0000"
+            android:focusable="false"
+            android:gravity="left"
+            android:paddingLeft="17pt"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="30pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list2_page_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="40pt"
+            android:background="#00ff0000"
+            android:focusable="false"
+            android:gravity="right"
+            android:paddingRight="25pt"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="30pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/list2_line_v"
+            android:layout_width="match_parent"
+            android:layout_height="2pt"
+            android:focusable="false"
+            android:layout_marginTop="80pt"
+            android:background="@drawable/chal_list_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list2_rv"
+            android:layout_width="match_parent"
+            android:layout_height="515pt"
+            android:layout_marginTop="90pt"
+            android:background="#00fff0f0"
+            android:scrollbars="none"
+            android:layout_marginLeft="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="650pt"
+            android:orientation="horizontal"
+            android:paddingLeft="30pt"
+            android:paddingRight="30pt"
+
+            android:focusable="false">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/previous_page"
+                android:drawableLeft="@drawable/previous_page"
+                android:textSize="14pt"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10pt"
+                android:visibility="invisible"
+                android:layout_marginRight="10pt"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/next_page"
+                android:drawableLeft="@drawable/next_page"
+                android:textSize="14pt"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10pt"
+                android:layout_marginRight="10pt"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/enshrine"
+                android:drawableLeft="@drawable/live_menu"
+                android:textSize="14pt"
+                android:layout_marginLeft="10pt"
+                android:layout_marginRight="10pt"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/live_about_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="10pt"
+            android:paddingLeft="20pt"
+            android:paddingTop="50pt"
+            android:paddingRight="20pt"
+            android:paddingBottom="20pt"
+            android:text="@string/about_live_content"
+            android:textColor="@android:color/white"
+            android:textSize="30pt"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/list3_root_v"
+        android:layout_width="378pt"
+        android:layout_height="match_parent"
+        android:background="#b0000000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/list3_kind_v"
+            android:layout_width="150pt"
+            android:layout_height="35pt"
+            android:layout_marginTop="40pt"
+            android:background="#00ff0000"
+            android:gravity="left"
+            android:paddingLeft="20pt"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="30pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list3_page_v"
+            android:layout_width="wrap_content"
+            android:layout_height="35pt"
+            android:layout_gravity="right"
+            android:layout_marginTop="40pt"
+            android:background="#00ff0000"
+            android:gravity="right"
+            android:paddingRight="30pt"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="30pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/list3_line_v"
+            android:layout_width="match_parent"
+            android:layout_height="2pt"
+            android:layout_marginTop="80pt"
+            android:background="@drawable/chal_list_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list3_rv"
+            android:layout_width="match_parent"
+            android:layout_height="560pt"
+            android:layout_marginTop="90pt"
+            android:background="#00fff0f0"
+            android:scrollbars="none"
+            android:layout_marginLeft="10pt"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="20pt"
+        android:layout_height="match_parent"
+        android:background="@drawable/right_arrow_bg"/>
+</LinearLayout>

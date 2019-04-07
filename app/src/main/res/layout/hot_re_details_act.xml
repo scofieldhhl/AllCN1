@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hot_re_details_title_v"
+        android:layout_width="@dimen/hot_re_details_title_v_wdith"
+        android:layout_height="80pt"
+        android:layout_marginTop="13pt"
+        android:background="@drawable/hot_re_title_bg"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="60pt"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="40pt"
+        android:textStyle="bold" />
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/hot_re_details_rv"
+        android:layout_width="match_parent"
+        android:layout_height="300pt"
+        android:layout_marginTop="149pt"
+        android:clickable="false"
+        android:clipToPadding="false"
+        android:paddingLeft="55pt"
+        android:tag="1" />
+
+    <com.allcn.views.AutoScrollView
+        android:id="@+id/hot_re_details_scroll_v"
+        android:layout_width="match_parent"
+        android:layout_height="158pt"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="60pt"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingLeft="60pt"
+        android:paddingRight="60pt">
+
+        <TextView
+            android:id="@+id/hot_re_details_text_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="5pt"
+            android:textColor="@android:color/white"
+            android:textSize="23pt" />
+    </com.allcn.views.AutoScrollView>
+</merge>

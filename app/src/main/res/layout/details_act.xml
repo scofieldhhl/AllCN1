@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/details_img_v"
+        android:layout_width="292pt"
+        android:layout_height="420pt"
+        android:layout_marginLeft="70pt"
+        android:layout_marginTop="43pt"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/details_title_v"
+        android:layout_width="match_parent"
+        android:layout_height="53pt"
+        android:layout_marginLeft="50pt"
+        android:layout_marginTop="43pt"
+        android:layout_toRightOf="@+id/details_img_v"
+        android:paddingRight="20pt"
+        android:textColor="@android:color/white"
+        android:textSize="39pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_dy_v"
+        style="@style/DETAILS_DY_TEXT_STYLE"
+        android:layout_below="@+id/details_title_v"
+        android:layout_alignLeft="@+id/details_title_v"
+        android:layout_marginTop="18pt"
+        android:layout_toRightOf="@+id/details_img_v" />
+
+    <TextView
+        android:id="@+id/details_zy_v"
+        style="@style/DETAILS_ZY_TEXT_STYLE"
+        android:layout_alignTop="@+id/details_dy_v"
+        android:layout_toRightOf="@+id/details_dy_v" />
+
+    <TextView
+        android:id="@+id/details_lx_v"
+        style="@style/DETAILS_DY_TEXT_STYLE"
+        android:layout_below="@+id/details_dy_v"
+        android:layout_alignLeft="@+id/details_dy_v"
+        android:layout_marginTop="12pt"
+        android:layout_toRightOf="@+id/details_img_v" />
+
+    <TextView
+        android:id="@+id/details_js_v"
+        style="@style/DETAILS_ZY_TEXT_STYLE"
+        android:layout_alignTop="@+id/details_lx_v"
+        android:layout_toRightOf="@+id/details_lx_v" />
+
+    <TextView
+        android:id="@+id/details_jj_v"
+        android:layout_width="753pt"
+        android:layout_height="133pt"
+        android:layout_below="@+id/details_lx_v"
+        android:layout_alignLeft="@+id/details_lx_v"
+        android:layout_marginTop="26pt"
+        android:layout_toRightOf="@+id/details_img_v"
+        android:ellipsize="end"
+        android:lineSpacingExtra="12pt"
+        android:maxLines="4"
+        android:textColor="@android:color/white"
+        android:textSize="16pt" />
+
+    <Button
+        android:id="@+id/details_play_v"
+        style="@style/DETAILS_BTN_STYLE"
+        android:layout_below="@+id/details_jj_v"
+        android:layout_alignLeft="@+id/details_jj_v"
+        android:layout_marginLeft="0pt"
+        android:layout_toRightOf="@+id/details_img_v"
+        android:text="@string/play"
+        android:background="@drawable/details_play_bg"/>
+
+    <Button
+        android:id="@+id/details_fav_v"
+        style="@style/DETAILS_BTN_STYLE"
+        android:layout_toRightOf="@+id/details_play_v"
+        android:text="@string/fav"
+        android:background="@drawable/details_fav_bg" />
+
+    <Button
+        android:id="@+id/details_selection_v"
+        style="@style/DETAILS_BTN_STYLE"
+        android:layout_toRightOf="@+id/details_fav_v"
+        android:text="@string/xj"
+        android:background="@drawable/details_selection_bg"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/details_more_v"
+        android:layout_width="40pt"
+        android:layout_height="25pt"
+        android:layout_alignBottom="@+id/details_jj_v"
+        android:layout_marginLeft="6pt"
+        android:layout_toRightOf="@+id/details_jj_v"
+        android:background="@drawable/details_more_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:nextFocusUp="@+id/details_more_v"
+        android:nextFocusRight="@+id/details_more_v"
+        android:nextFocusDown="@+id/details_more_v"
+        android:text="@string/more"
+        android:textColor="@android:color/white"
+        android:textSize="10pt" />
+
+    <View
+        android:id="@+id/details_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="2pt"
+        android:layout_below="@+id/details_img_v"
+        android:layout_marginTop="17pt"
+        android:background="@drawable/search_line" />
+
+    <TextView
+        android:id="@+id/details_menu_tips_v"
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:layout_below="@+id/details_line_v"
+        android:layout_marginLeft="83pt"
+        android:layout_marginTop="10pt"
+        android:text="@string/details_press_tips"
+        android:textColor="@android:color/white"
+        android:textSize="21pt"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/details_js_header_up"
+        style="@style/DETAILS_JS_HEADER_STYLE"
+        android:layout_below="@+id/details_menu_tips_v"
+        android:layout_marginTop="20pt"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/details_js_header_down"
+        style="@style/DETAILS_JS_HEADER_STYLE"
+        android:layout_below="@+id/details_js_header_up"
+        android:layout_marginTop="30pt"
+        android:visibility="gone" />
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/details_js_rv_up"
+        style="@style/DETAILS_JS_RV_STYLE"
+        android:layout_below="@+id/details_menu_tips_v"
+        android:layout_marginTop="19pt"
+        android:layout_toRightOf="@+id/details_js_header_up"
+        android:scrollbars="none"
+        android:tag="1"
+        android:visibility="gone"/>
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/details_js_rv_down"
+        style="@style/DETAILS_JS_RV_STYLE"
+        android:layout_below="@+id/details_js_rv_up"
+        android:layout_marginTop="30pt"
+        android:layout_toRightOf="@+id/details_js_header_down"
+        android:scrollbars="none"
+        android:tag="1"
+        android:visibility="gone" />
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/details_re_rv"
+        android:layout_width="match_parent"
+        android:layout_height="180pt"
+        android:layout_below="@+id/details_line_v"
+        android:layout_marginLeft="70pt"
+        android:layout_marginTop="26pt"
+        android:scrollbars="none"
+        android:tag="1" />
+</RelativeLayout>

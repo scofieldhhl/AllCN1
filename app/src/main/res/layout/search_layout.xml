@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:clipToPadding="false"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:id="@+id/search_keyboard_root_v"
+        android:layout_width="438pt"
+        android:layout_height="match_parent"
+        android:background="#9922031d"
+        android:orientation="vertical"
+        android:descendantFocusability="afterDescendants">
+        
+        <EditText
+            android:id="@+id/search_edit_text_v"
+            android:layout_width="360pt"
+            android:layout_height="43pt"
+            android:background="@drawable/search_frame_f"
+            android:layout_marginTop="67pt"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35pt">
+            <ImageButton
+                android:id="@+id/search_del_all_v"
+                android:layout_width="60pt"
+                android:layout_height="60pt"
+                android:src="@drawable/del_all"
+                android:scaleType="fitXY"
+                android:background="@drawable/keyboard_item_bg"
+                android:padding="11pt"/>
+            <ImageButton
+                android:id="@+id/search_del_v"
+                android:layout_width="60pt"
+                android:layout_height="60pt"
+                android:src="@drawable/del"
+                android:layout_marginLeft="130pt"
+                android:scaleType="fitXY"
+                android:background="@drawable/keyboard_item_bg"
+                android:padding="11pt"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30pt"
+            android:paddingLeft="30pt"
+            android:paddingRight="30pt"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_hot_root_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+        
+        <TextView
+            android:id="@+id/search_hot_re_v"
+            android:layout_width="680pt"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="27pt"
+            android:singleLine="true"
+            android:layout_marginTop="45pt"
+            android:layout_marginLeft="45pt"
+            android:text="@string/hot_re"/>
+
+        <TextView
+            android:id="@+id/search_page_v"
+            android:layout_width="200pt"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="25pt"
+            android:singleLine="true"
+            android:layout_marginRight="45pt"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_alignBottom="@+id/search_hot_re_v"/>
+        
+        <View
+            android:id="@+id/search_line_v"
+            android:layout_width="750pt"
+            android:layout_height="1pt"
+            android:layout_below="@+id/search_hot_re_v"
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="45pt"
+            android:background="@android:color/white" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_hot_re_list_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30pt"
+            android:paddingLeft="60pt"
+            android:paddingRight="40pt"
+            android:layout_below="@+id/search_line_v"
+            android:clipChildren="false"
+            android:clipToPadding="false"/>
+    </RelativeLayout>
+</LinearLayout>

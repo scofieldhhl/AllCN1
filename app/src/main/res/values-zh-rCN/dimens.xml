@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="live_kind_item_paddingLeft">80pt</dimen>
+    <dimen name="list1_big_w">240pt</dimen>
+    <dimen name="about_us_v_paddingRight">50pt</dimen>
+    <dimen name="favorite_v_paddingRight">50pt</dimen>
+    <dimen name="category_v_paddingRight">50pt</dimen>
+    <dimen name="details_play_width">133pt</dimen>
+    <dimen name="playback_yy_title_v_width">120pt</dimen>
+    <dimen name="playback_yy_title_v_textSize">25pt</dimen>
+    <dimen name="playback_yy_title_v_marginLeft">93pt</dimen>
+    <dimen name="playback_zh_title_v_marginLeft">45pt</dimen>
+    <dimen name="kind_movie_search_v_w">70pt</dimen>
+    <dimen name="kind_movie_title_v_w">333pt</dimen>
+    <dimen name="sedm_pkind_item_textSize">30pt</dimen>
+    <dimen name="sedm_details_btn_width">180pt</dimen>
+    <dimen name="hot_re_name_big_text_size">45pt</dimen>
+    <dimen name="hot_re_name_small_text_size">30pt</dimen>
+    <dimen name="topics_kind_1_text_size">30pt</dimen>
+    <dimen name="hot_re_details_title_v_wdith">400pt</dimen>
+    <dimen name="sedm_kind_movie_title_v_text_size">30pt</dimen>
+    <dimen name="sedm_kind_movie_title_v_paddingBottom">15pt</dimen>
+    <dimen name="sedm_kind_movie_search_v_width">122pt</dimen>
+    <dimen name="sedm_kind_movie_search_v_marginRight">50pt</dimen>
+    <dimen name="sedm_kind_movie_page_v_marginRight">185pt</dimen>
+</resources>

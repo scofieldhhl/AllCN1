@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sedm_kind_movie_title_v"
+        android:layout_width="200pt"
+        android:layout_height="90pt"
+        android:layout_marginLeft="13pt"
+        android:background="@drawable/sedm_main_title_bg"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/sedm_kind_movie_title_v_paddingBottom"
+        android:singleLine="true"
+        android:text="@string/sedh"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sedm_kind_movie_title_v_text_size" />
+
+    <TextView
+        android:id="@+id/sedm_kind_movie_page_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="56pt"
+        android:layout_marginRight="@dimen/sedm_kind_movie_page_v_marginRight"
+        android:layout_marginBottom="10pt"
+        android:textColor="@android:color/white"
+        android:textSize="23pt" />
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/sedm_kind_movie_search_v"
+        android:layout_width="@dimen/sedm_kind_movie_search_v_width"
+        android:layout_height="34pt"
+
+        android:layout_gravity="right"
+        android:layout_marginTop="48pt"
+        android:layout_marginRight="@dimen/sedm_kind_movie_search_v_marginRight"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="right|center_vertical"
+        android:paddingRight="34pt"
+        android:text="@string/search"
+        android:textColor="@color/sedm_kind_search_text_color"
+        android:textSize="16pt"
+        app:stv_isShowState="true"
+        app:stv_state_drawable="@drawable/sedm_kind_search_nof"
+        app:stv_state_drawable2="@drawable/sedm_kind_search_f"
+        app:stv_state_drawable2_height="34pt"
+        app:stv_state_drawable2_mode="left"
+        app:stv_state_drawable2_width="@dimen/sedm_kind_movie_search_v_width"
+        app:stv_state_drawable_height="34pt"
+        app:stv_state_drawable_mode="left"
+        app:stv_state_drawable_width="@dimen/sedm_kind_movie_search_v_width"/>
+
+    <View
+        android:id="@+id/sedm_kind_movie_line_v"
+        android:layout_width="946pt"
+        android:layout_height="2pt"
+        android:layout_gravity="right"
+        android:layout_marginTop="85pt"
+        android:layout_marginRight="36pt"
+        android:background="@drawable/sedm_kind_line" />
+
+    <FrameLayout
+        android:id="@+id/sedm_kind_movie_pkind_root_v"
+        style="@style/SEDM_KIND_ROOT_STYLE"
+        android:layout_width="0pt"
+        android:layout_marginLeft="@dimen/sedm_kind_movie_pkind_root_leftOffset">
+
+        <View
+            android:id="@+id/sedm_kind_moive_pkind_bg_v"
+            style="@style/SEDM_KIND_BG_STYLE"
+            android:visibility="gone" />
+
+        <com.allcn.views.FocusKeepRecyclerView
+            android:id="@+id/sedm_kind_movie_pkind_v"
+            style="@style/SEDM_KIND_RV_STYLE" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sedm_kind_movie_kind_root_v"
+        style="@style/SEDM_KIND_ROOT_STYLE"
+        android:layout_marginLeft="@dimen/sedm_kind_movie_pkind_root_leftOffset">
+
+        <View
+            android:id="@+id/sedm_kind_moive_kind_bg_v"
+            style="@style/SEDM_KIND_BG_STYLE" />
+
+        <com.allcn.views.FocusKeepRecyclerView
+            android:id="@+id/sedm_kind_movie_kind_v"
+            style="@style/SEDM_KIND_RV_STYLE" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sedm_kind_movie_ckind_root_v"
+        style="@style/SEDM_KIND_ROOT_STYLE">
+
+        <View
+            android:id="@+id/sedm_kind_moive_ckind_bg_v"
+            style="@style/SEDM_KIND_BG_STYLE" />
+
+        <com.allcn.views.FocusKeepRecyclerView
+            android:id="@+id/sedm_kind_movie_ckind_v"
+            style="@style/SEDM_KIND_RV_STYLE"
+            android:layout_marginTop="@dimen/sedm_kind_movie_ckind_first_topOffset"
+            android:layout_marginBottom="@dimen/sedm_kind_movie_ckind_topOffset" />
+
+        <View
+            android:id="@+id/sedm_kind_movie_arrow_v"
+            android:layout_width="66pt"
+            android:layout_height="66pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="260pt"
+            android:background="@drawable/ckind_arrow" />
+    </FrameLayout>
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/sedm_kind_movie_v"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingLeft="13pt"
+        android:paddingTop="13pt"
+        android:paddingRight="16pt"
+        android:scrollbars="none"
+        android:tag="1" />
+
+    <ImageView
+        android:id="@+id/sedm_left_bottom_img_v"
+        android:layout_width="266pt"
+        android:layout_height="173pt"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/sedm_left_bottom_img" />
+</merge>

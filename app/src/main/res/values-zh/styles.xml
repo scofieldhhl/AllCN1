@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SEDM_DETAILS_BTN_STYLE" parent="DETAILS_BTN_STYLE">
+        <item name="android:layout_width">@dimen/sedm_details_btn_width</item>
+        <item name="android:layout_height">55pt</item>
+        <item name="android:textSize">28pt</item>
+        <item name="android:layout_marginTop">13pt</item>
+        <item name="android:layout_marginLeft">37pt</item>
+        <item name="android:layout_below">@+id/sedm_details_jj_v</item>
+        <item name="android:textColor">@color/sedm_movie_details_btn_text_color</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.allcn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".utils.AppMain"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl,android:allowBackup">
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="userLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".activities.WelcomeAct" />
+        <activity
+            android:name=".activities.YYSJAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.KindMovieAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.DetailsAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.HotReAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.HotReDetailsAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.TopicsMainAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.SEDMMainAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.SEDMKindListAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.SEDMMovieDetailsAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.PlayAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.TopicsDetailsAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.SetAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.ClearAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.AboutAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.AboutFullTextAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.LiveAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.PlayBackAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.PlayBackMainAct"
+            android:screenOrientation="userLandscape" />
+        <activity
+            android:name=".activities.SearchAct"
+            android:screenOrientation="userLandscape" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path_files" />
+        </provider>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b84e394b27b0a7f54000022" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ALL CN" />
+    </application>
+
+</manifest>

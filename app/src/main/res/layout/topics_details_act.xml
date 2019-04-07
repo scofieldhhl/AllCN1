@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/topics_details_root_v">
+
+    <TextView
+        android:id="@+id/topics_details_title_v"
+        android:layout_width="wrap_content"
+        android:layout_height="80pt"
+        android:layout_marginTop="17pt"
+        android:background="@drawable/topics_details_title_bg"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20pt"
+        android:paddingRight="40pt"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="40pt" />
+
+    <ImageView
+        android:id="@+id/topics_details_img_v"
+        android:layout_width="60pt"
+        android:layout_height="87pt"
+        android:layout_gravity="right"
+        android:layout_marginRight="28pt"
+        android:background="@drawable/topics_details_fav_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="360pt"
+        android:layout_gravity="bottom"
+        android:background="@drawable/topics_details_bottom_bg"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/topics_details_intro_v"
+            android:layout_width="@dimen/topics_details_intro_v_w"
+            android:layout_height="237pt"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="47pt"
+            android:lineSpacingExtra="12pt"
+            android:paddingLeft="33pt"
+            android:textColor="@android:color/white"
+            android:textSize="20pt" />
+
+        <com.allcn.views.FocusKeepRecyclerView
+            android:id="@+id/topics_details_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="408pt"
+            android:clipChildren="false"
+            android:clipToPadding="false"/>
+    </FrameLayout>
+</FrameLayout>

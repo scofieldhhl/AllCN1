@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="175pt"--><!--android:layout_height="250pt"--><!--android:elevation="10pt">-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="143pt"
+    android:layout_height="match_parent"
+    android:elevation="10pt"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/sedm_details_re_movie_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/sedm_details_re_movie_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:gravity="center_horizontal"
+        android:paddingTop="5pt"
+        android:textColor="@android:color/white"
+        android:textSize="16pt"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/sedm_details_re_movie_forground_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sedm_movie_nof" />
+
+    <TextView
+        android:id="@+id/sedm_details_re_movie_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15pt"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/sedm_kind_movie_item_text_color"
+        android:textSize="15pt" />
+</FrameLayout>

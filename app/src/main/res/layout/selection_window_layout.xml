@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0000000"
+    android:descendantFocusability="afterDescendants"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20pt"
+        android:layout_marginTop="50pt"
+        android:layout_centerHorizontal="true"
+        android:text="@string/click_menu_switch"
+        android:textColor="@color/white"/>
+
+    <FrameLayout
+        android:id="@+id/selection_cates_root_v"
+        android:layout_width="810pt"
+        android:layout_height="50pt"
+        android:layout_marginTop="93pt"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true">
+
+        <com.allcn.views.FocusKeepRecyclerView
+            android:id="@+id/selection_cates_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/selection_list_root_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25pt"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/selection_cates_root_v"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <com.allcn.views.FocusKeepRecyclerView
+            android:id="@+id/selection_list_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+    </FrameLayout>
+</RelativeLayout>

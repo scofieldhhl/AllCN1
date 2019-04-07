@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="175pt"--><!--android:layout_height="250pt"--><!--android:elevation="10pt">-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Kind_movie_root_style"
+    android:layout_width="match_parent"
+    android:layout_height="295pt"
+    android:elevation="10pt">
+
+    <FrameLayout
+        android:layout_width="170pt"
+        android:layout_height="240pt"
+        android:layout_marginLeft="12pt"
+        android:layout_marginTop="12pt">
+
+        <ImageView
+            android:id="@+id/kind_movie_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_margin="2pt" />
+
+        <TextView
+            android:id="@+id/kind_movie_item_info"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="2pt"
+            android:layout_marginRight="2pt"
+            android:layout_height="30pt"
+            android:layout_gravity="bottom"
+            android:background="@drawable/km_item_info_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="17pt"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/kind_movie_item_text"
+        style="@style/Kind_movie_item_text_style"
+        android:layout_width="170pt"
+        android:layout_height="30pt"
+        android:layout_marginLeft="7pt"
+        android:layout_marginTop="250pt" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/movie_item_img"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="fitXY" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/movie_item_text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50pt"-->
+    <!--android:background="@drawable/update_to_bg"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:paddingTop="5pt"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="16pt"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/movie_item_name"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="39pt"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="@drawable/movie_item_name_bg"-->
+    <!--android:ellipsize="marquee"-->
+    <!--android:gravity="center"-->
+    <!--android:marqueeRepeatLimit="marquee_forever"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="24pt" />-->
+</FrameLayout>

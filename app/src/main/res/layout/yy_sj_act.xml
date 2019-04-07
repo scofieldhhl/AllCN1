@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yy_xf_bg">
+
+    <TextView
+        android:id="@+id/yy_sj_title_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70pt"
+        android:layout_marginTop="55pt"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:longClickable="false"
+        android:text="@string/yy_world"
+        android:textColor="@android:color/white"
+        android:textSize="32pt" />
+
+    <ImageView
+        android:id="@+id/yy_sj_net_v"
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:layout_marginTop="22pt"
+        android:layout_marginRight="19pt"
+        android:layout_toLeftOf="@+id/yy_sj_time_v"
+        android:background="@drawable/wifi_ok"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/yy_sj_time_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18pt"
+        android:layout_marginRight="40pt"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:singleLine="true"
+        android:text="99:99"
+        android:textColor="@android:color/white"
+        android:textSize="45pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yy_sj_dy_bl_v"
+        android:layout_width="294pt"
+        android:layout_height="475pt"
+        android:layout_marginLeft="68pt"
+        android:layout_marginTop="138pt"
+        android:background="@drawable/yy_dy_bl_icon"
+        android:gravity="bottom"
+        android:nextFocusRight="@+id/yy_sj_rb_jj_v"
+        android:paddingLeft="113pt"
+        android:paddingBottom="25pt"
+        android:text="@string/dy_bl"
+        android:textColor="@android:color/white"
+        android:textSize="32pt"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"/>
+
+    <TextView
+        android:id="@+id/yy_sj_rb_jj_v"
+        android:layout_width="507pt"
+        android:layout_height="280pt"
+        android:layout_alignTop="@+id/yy_sj_dy_bl_v"
+        android:layout_marginLeft="23pt"
+        android:layout_toRightOf="@+id/yy_sj_dy_bl_v"
+        android:background="@drawable/yy_rb_jj_icon"
+        android:gravity="left|bottom"
+        android:nextFocusLeft="@+id/yy_sj_dy_bl_v"
+        android:nextFocusRight="@+id/yy_sj_zy_bs_v"
+        android:nextFocusDown="@+id/yy_sj_zx_dy_v"
+        android:paddingLeft="30pt"
+        android:paddingBottom="6pt"
+        android:text="@string/rb_jj"
+        android:textColor="@android:color/white"
+        android:textSize="32pt"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:id="@+id/yy_sj_zy_bs_v"
+        android:layout_width="300pt"
+        android:layout_height="280pt"
+        android:layout_alignTop="@+id/yy_sj_rb_jj_v"
+        android:layout_marginLeft="22pt"
+        android:layout_toRightOf="@+id/yy_sj_rb_jj_v"
+        android:background="@drawable/yy_zy_bs_icon"
+        android:gravity="left|bottom"
+        android:nextFocusLeft="@+id/yy_sj_rb_jj_v"
+        android:nextFocusDown="@+id/yy_sj_jl_sc_v"
+        android:nextFocusRight="@+id/yy_sj_zx_dy_v"
+        android:paddingLeft="10pt"
+        android:paddingBottom="10pt"
+        android:text="@string/zy_bs"
+        android:textColor="@android:color/white"
+        android:textSize="26pt"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/yy_sj_zx_dy_v"
+        style="@style/YYSJ_MIDDDLE_BIG_STYLE"
+        android:layout_below="@+id/yy_sj_rb_jj_v"
+        android:layout_toRightOf="@+id/yy_sj_dy_bl_v"
+        android:background="@drawable/yy_zx_dy_icon"
+        android:nextFocusLeft="@+id/yy_sj_dy_bl_v"
+        android:nextFocusRight="@+id/yy_sj_zx_zj_v"
+        android:nextFocusUp="@+id/yy_sj_rb_jj_v"
+        android:text="@string/zx_dy" />
+
+    <TextView
+        android:id="@+id/yy_sj_zx_zj_v"
+        style="@style/YYSJ_MIDDDLE_BIG_STYLE"
+        android:layout_below="@+id/yy_sj_rb_jj_v"
+        android:layout_toRightOf="@+id/yy_sj_zx_dy_v"
+        android:background="@drawable/yy_zx_zj_icon"
+        android:nextFocusLeft="@+id/yy_sj_zx_dy_v"
+        android:nextFocusRight="@+id/yy_sj_jl_sc_v"
+        android:nextFocusUp="@+id/yy_sj_rb_jj_v"
+        android:text="@string/zx_zj" />
+
+    <TextView
+        android:id="@+id/yy_sj_jl_sc_v"
+        style="@style/YYSJ_MIDDDLE_BIG_STYLE"
+        android:layout_below="@+id/yy_sj_zy_bs_v"
+        android:layout_toRightOf="@+id/yy_sj_zx_zj_v"
+        android:background="@drawable/yy_jl_sc_icon"
+        android:nextFocusLeft="@+id/yy_sj_zx_zj_v"
+        android:nextFocusUp="@+id/yy_sj_zy_bs_v"
+        android:nextFocusRight="@id/yy_sj_dy_bl_v"
+        android:text="@string/jl_sc" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/js_item_f"/>
+    <item android:state_activated="true" android:drawable="@drawable/js_item_sel_nof"/>
+    <item android:drawable="@drawable/js_item_nof"/>
+</selector>

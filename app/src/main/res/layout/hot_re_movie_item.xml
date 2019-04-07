@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Kind_movie_root_style"
+    android:layout_width="@dimen/hot_re_movie_item_w"
+    android:layout_height="@dimen/hot_re_movie_item_h">
+
+    <FrameLayout
+        android:layout_width="160pt"
+        android:layout_height="230pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="5pt">
+
+        <ImageView
+            android:id="@+id/hot_re_movie_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/hot_re_movie_item_info"
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="17pt"
+            android:background="@drawable/km_item_info_bg"
+            android:layout_gravity="bottom"
+            android:singleLine="true"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/hot_re_movie_item_text"
+        style="@style/Hot_Re_movie_item_text_style"
+        android:layout_width="160pt"
+        android:layout_height="30pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="233pt" />
+
+    <ImageView
+        android:id="@+id/hot_re_movie_item_label"
+        android:layout_width="70pt"
+        android:layout_height="70pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginTop="2pt"
+        android:visibility="gone"/>
+</FrameLayout>

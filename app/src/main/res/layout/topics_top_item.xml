@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350pt"
+    android:layout_height="500pt">
+
+    <ImageView
+        android:id="@+id/topics_top_item_img_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/topics_top_item_text_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="70pt"
+        android:background="@drawable/text_bg"
+        android:ellipsize="marquee"
+        android:gravity="bottom|center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="10pt"
+        android:singleLine="true"
+        android:text="布拉德-皮特精选"
+        android:textColor="@android:color/white"
+        android:textSize="30pt" />
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/buffer1"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer2"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer3"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer4"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer5"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer6"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer7"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer8"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer9"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer10"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer11"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer12"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer13"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer14"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer15"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer16"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer17"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer18"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer19"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/buffer20"
+        android:duration="75" />
+</animation-list>

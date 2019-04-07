@@ -1,0 +1,45 @@
+package com.allcn.utils;
+
+public class MSG {
+    public static final int CHANGE_HOME_INFO = 0x00;
+    public static final int CHANGE_HOME_ICON = 0x01;
+    public static final int KIND_MOIVE_ANIM_END = 0x02;
+    public static final int MSG_SCROLL = 0x03;
+    public static final int MSG_SCROLL_LOOP = 0x04;
+    public static final int SHOW_LOGIN_TIPS = 0x05;
+    public static final int HIDE_LOGIN_TIPS = 0x06;
+    public static final int INTO_UI = 0x07;
+    public static final int SHOW_PAY = 0x08;
+    public static final int EXIT_APP = 0x09;
+    public static final int PLAY_POS = 0x0a;
+    public static final int PLAY_NEXT = 0x0b;
+    public static final int MSG_UPDATE_PROGRESS = 0x0c;
+    public static final int MSG_SEEK = 0x0d;
+    public static final int MSG_HIDE_SEEK_BAR = 0x0e;
+    public static final int MSG_SHOW_SEEK_BAR = 0x0f;
+    public static final int MSG_SHOW_PROGRESS = 0x10;
+    public static final int MSG_HIDE_PROGRESS = 0x11;
+    public static final int PLAY_PREV = 0x12;
+    public static final int TOPICS_TOP_FOCUS = 0x13;
+    public static final int HIDE_LIST = 0x14;
+    public static final int SHOW_LOAD = 0x15;
+    public static final int HIDE_MAINTENANCE = 0x16;
+    public static final int HIDE_LOAD = 0x17;
+    public static final int HIDE_BOTTOM = 0x18;
+    public static final int PLAY_CHAL = 0x19;
+    public static final int PLAY_URL = 0x1a;
+    public static final int PLAY = 0x1b;
+    public static final int SHOW_BOTTOM = 0x1c;
+    public static final int SEND_TO_SER = 0x1d;
+    public static final int INIT_OVER = 0x1e;
+    public static final int SHOW_MAINTENANCE = 0x1f;
+    public static final int WATCH_TIMEOUT = 0x20;
+    public static final int GET_CHAL = 0x21;
+    public static final int SHOW_TIPS = 0x22;
+    public static final int SURE_KEY = 0x23;
+    public static final int SEND_PLAY = 0x24;
+    public static final int MSG_UPDATE_SPEED = 0x25;
+    public static final int MSG_STATUS_HIDE = 0x26;
+    public static final int TIPS_RESET_KEY = 0x27;
+    public static final int FIRST_LOAD = 0x28;
+}

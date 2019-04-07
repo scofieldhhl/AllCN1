@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yy_xf_bg">
+
+    <TextView
+        android:id="@+id/yy_xf_title_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63pt"
+        android:layout_marginTop="53pt"
+        android:text="@string/ys_first"
+        android:textColor="@android:color/white"
+        android:textSize="32pt"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:longClickable="false"/>
+
+    <ImageView
+        android:id="@+id/yy_xf_net_v"
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:layout_marginTop="22pt"
+        android:layout_marginRight="19pt"
+        android:layout_toLeftOf="@+id/yy_xf_time_v"
+        android:background="@drawable/wifi_ok" />
+
+    <TextView
+        android:id="@+id/yy_xf_time_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18pt"
+        android:layout_marginRight="40pt"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="45pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yy_xf_jl_sc_v"
+        style="@style/YSXF_SMALL_STYLE"
+        android:layout_marginTop="139pt"
+        android:background="@drawable/sc_jl_icon"
+        android:text="@string/jl_sc" />
+
+    <TextView
+        android:id="@+id/yy_xf_zx_dy_v"
+        style="@style/YSXF_SMALL_STYLE"
+        android:layout_below="@+id/yy_xf_jl_sc_v"
+        android:layout_marginTop="25pt"
+        android:background="@drawable/zx_dy_icon"
+        android:text="@string/zx_dy" />
+
+    <TextView
+        android:id="@+id/yy_xf_zx_zj_v"
+        style="@style/YSXF_SMALL_STYLE"
+        android:layout_below="@+id/yy_xf_zx_dy_v"
+        android:layout_marginTop="25pt"
+        android:background="@drawable/zx_zj_icon"
+        android:text="@string/zx_zj" />
+
+    <TextView
+        android:id="@+id/yy_xf_dy_bl_v"
+        style="@style/YSXF_VERTICAL_BIG_STYLE"
+        android:layout_alignTop="@+id/yy_xf_jl_sc_v"
+        android:layout_marginLeft="19pt"
+        android:layout_toRightOf="@+id/yy_xf_zx_dy_v"
+        android:background="@drawable/dy_bl_icon"
+        android:text="@string/dy_bl" />
+
+    <TextView
+        android:id="@+id/yy_xf_rb_jj_v"
+        style="@style/YSXF_HORIZONTAL_BIG_STYLE"
+        android:layout_alignTop="@+id/yy_xf_dy_bl_v"
+        android:layout_marginLeft="20pt"
+        android:layout_toRightOf="@+id/yy_xf_dy_bl_v"
+        android:background="@drawable/rb_jj_icon"
+        android:text="@string/rb_jj" />
+
+    <TextView
+        android:id="@+id/yy_xf_ty_jj_v"
+        style="@style/YSXF_MIDDDLE_BIG_STYLE"
+        android:layout_below="@+id/yy_xf_rb_jj_v"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="23pt"
+        android:layout_toRightOf="@+id/yy_xf_dy_bl_v"
+        android:background="@drawable/ty_jj_icon"
+        android:text="@string/ty_jj" />
+
+    <TextView
+        android:id="@+id/yy_xf_ml_jl_v"
+        style="@style/YSXF_MIDDDLE_BIG_STYLE"
+        android:layout_below="@+id/yy_xf_rb_jj_v"
+        android:layout_alignTop="@+id/yy_xf_ty_jj_v"
+        android:layout_marginLeft="22pt"
+        android:layout_toRightOf="@+id/yy_xf_ty_jj_v"
+        android:background="@drawable/ml_jl_icon"
+        android:text="@string/ml_jl" />
+
+    <TextView
+        android:id="@+id/yy_xf_zy_bs_v"
+        style="@style/YSXF_VERTICAL_BIG_STYLE"
+        android:layout_alignTop="@+id/yy_xf_dy_bl_v"
+        android:layout_marginLeft="19pt"
+        android:layout_toRightOf="@+id/yy_xf_rb_jj_v"
+        android:background="@drawable/zy_bs_icon"
+        android:paddingLeft="100pt"
+        android:nextFocusRight="@id/yy_xf_zx_dy_v"
+        android:text="@string/zy_bs" />
+</RelativeLayout>

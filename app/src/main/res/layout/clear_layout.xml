@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/set_set_v"
+        android:layout_width="55pt"
+        android:layout_height="55pt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40pt"
+        android:layout_marginTop="40pt"
+        android:background="@drawable/home_set_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_data"
+        android:textSize="35pt"
+        android:textColor="#9b9b9b"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/set_set_v"
+        android:layout_marginLeft="30pt"
+        android:layout_marginTop="40pt"/>
+
+    <FrameLayout
+        android:id="@+id/clear_history_v"
+        android:layout_width="700pt"
+        android:layout_height="60pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200pt"
+        android:background="@drawable/clear_item_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history_page"
+            android:singleLine="true"
+            android:textSize="26pt"
+            android:textColor="#9b9b9b"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10pt"/>
+        
+        <ImageView
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:background="@drawable/set_del"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="70pt"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/clear_fav_v"
+        android:layout_width="700pt"
+        android:layout_height="60pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20pt"
+        android:background="@drawable/clear_item_bg"
+        android:layout_below="@+id/clear_history_v"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fav"
+            android:singleLine="true"
+            android:textSize="26pt"
+            android:textColor="#9b9b9b"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10pt"/>
+
+        <ImageView
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:background="@drawable/set_del"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="70pt"/>
+    </FrameLayout>
+</RelativeLayout>

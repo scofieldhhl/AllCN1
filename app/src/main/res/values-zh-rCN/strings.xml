@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">魅力影视</string>
+    <string name="live">直播</string>
+    <string name="playback">回看</string>
+    <string name="yy_world">粤语视界</string>
+    <string name="ys_first">影视先锋</string>
+    <string name="children_dm">少儿动漫</string>
+    <string name="hot_re">热门推荐</string>
+    <string name="lg_yy">蓝光影院</string>
+    <string name="hot_topics">热门专题</string>
+    <string name="set_mgr">设置管理</string>
+    <string name="jl_sc">记录/收藏</string>
+    <string name="zx_dy">最新电影</string>
+    <string name="zx_zj">最新追剧</string>
+    <string name="dy_bl">电影部落</string>
+    <string name="rb_jj">热播剧集</string>
+    <string name="ty_jj">体育竞技</string>
+    <string name="ml_jl">魅力记录</string>
+    <string name="zy_bs">综艺巴士</string>
+    <string name="page_fmt">%1$d/%2$d页</string>
+    <string name="search">搜索</string>
+    <string name="update_to_ji">更新至%1$s集</string>
+    <string name="play">播放</string>
+    <string name="fav">收藏</string>
+    <string name="unfav">取消</string>
+    <string name="xj">选集</string>
+    <string name="collection_op_tips">按 "菜单" 键切换顺序</string>
+    <string name="details_press_tips">按menu键切换倒序</string>
+    <string name="movie">电影</string>
+    <string name="jj">剧集</string>
+    <string name="zy">综艺</string>
+    <string name="zt">专题</string>
+    <string name="dy_fmt">导演:\u0020\u0020\u0020%1$s</string>
+    <string name="zy_fmt">主演:\u0020\u0020%1$s</string>
+    <string name="lx_fmt">类型:\u0020\u0020\u0020%1$s</string>
+    <string name="js_fmt">集数:\u0020\u0020%1$s集</string>
+    <string name="intro">剧情简介:\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="intro_nospace">剧情简介:\n%1$s</string>
+    <string name="sedh">少儿动画</string>
+    <string name="egyy">儿歌音乐</string>
+    <string name="dmdy">动漫电影</string>
+    <string name="dmjj">动漫剧集</string>
+    <string name="xxjy">学习教育</string>
+    <string name="mxzq">明星专区</string>
+    <string name="xgtj">相关推荐</string>
+    <string name="sedm_dy_fmt">导\u0020\u0020\u0020\u0020演:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="sedm_yz_fmt">原\u0020\u0020\u0020\u0020作:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="sedm_dq_fmt">地\u0020\u0020\u0020\u0020区:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="sedm_lx_fmt">类\u0020\u0020\u0020\u0020型:\u0020\u0020\u0020\u0020%1$s</string>
+    <string name="end">播放完毕</string>
+    <string name="set_and_mgr">设置管理</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="sys_update">系统升级</string>
+    <string name="about_us">关于我们</string>
+    <string name="yypy">粤语配音</string>
+    <string name="bfsj">缤纷世界</string>
+    <string name="card_no_hint">卡号.</string>
+    <string name="card_ps_hint">密码</string>
+    <string name="ok">确定</string>
+    <string name="exit">退出</string>
+    <string name="paying">充值中, 请等待</string>
+    <string name="press_ok_show_live_list">按 \"OK键\" 显示节目列表</string>
+    <string name="play_act_title_fmt">%1$s - %2$d集</string>
+    <string name="movie_not_exists">该影片不存在</string>
+    <string name="yyzt">粤语专题</string>
+    <string name="zhzt">综合专题</string>
+    <string name="ysys">饮食养生</string>
+    <string name="latest_ver">已经是新版本</string>
+    <string name="clear_over">清除完毕</string>
+    <string name="about_all_content">关于软件\n\n本软件致力于提供互联网流媒体节目，以海量精彩内容和卓越的使用体验为用户带来极致视听享受。</string>
+    <string name="about_live_content">本软件致力于提供互联网流媒体节目，以海量精彩内容和卓越的使用体验为用户带来极致视听享受。\n\n软件版本: %1$s</string>
+    <string name="about">关于</string>
+    <string name="subscription">天数</string>
+    <string name="mac">Mac</string>
+    <string name="version">版本</string>
+    <string name="clear_data">清除缓存</string>
+    <string name="history_page">历史记录</string>
+    <string name="fav_list">收藏列表</string>
+    <string name="category">节目列表</string>
+    <string name="all_kind_name">全部</string>
+    <string name="live_epg_now">当前节目:</string>
+    <string name="live_epg_next">下一节目:</string>
+    <string name="fav_chal_tips">收藏这个节目吗?</string>
+    <string name="unfav_chal_tips">取消收藏这个节目吗?</string>
+    <string name="invalid_chal_num">无效频道号</string>
+    <string name="long_time_tips">2004:Are you here?\nPlease enter the number shown in the picture</string>
+    <string name="press_back_again">再按一次返回键退出程序</string>
+    <string name="again_back_live">再按一次返回键退出直播</string>
+    <string name="again_back_playback" >再按一次返回键退出全屏</string>
+
+    <string name="net_bad">网络连接失败, 请检查网络</string>
+    <string name="playback_yy">粤语</string>
+    <string name="playback_dl">大陆</string>
+    <string name="playback_zh">综合</string>
+    <string name="playback_cur_pd">当前频道：</string>
+    <string name="playback_cur_jm">当前节目：</string>
+    <string-array name="playback_week_arr">
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string name="playback_week_fmt">MM月dd日\nEEEE</string>
+    <string name="more">更多</string>
+    <string name="ser_con_err_tips">2002:服务器连接失败%1$s</string>
+    <string name="no_net">1002:网络连接失败</string>
+    <string name="expired">1003:已到期\n(%1$s)</string>
+    <string name="click_menu_switch">按menu键切换排序</string>
+    <string name="again_back_play">再按一次返回键退出视频播放</string>
+    <string-array name="sedm_bottom_name_arr">
+        <item>小猪佩奇</item>
+        <item>巧虎</item>
+        <item>超级飞侠</item>
+        <item>汪汪队立大功</item>
+        <item>猪猪侠</item>
+        <item>海底小纵队</item>
+        <item>托马斯和他的朋友们</item>
+        <item>熊出没</item>
+    </string-array>
+    <string-array name="sedm_kind_name_arr">
+        <item>少儿动画</item>
+        <item>儿歌音乐</item>
+        <item>学习教育</item>
+        <item>明星专区</item>
+        <item>动漫电影</item>
+        <item>动漫剧集</item>
+    </string-array>
+    <string-array name="fav_history_name_arr">
+        <item>影片收藏</item>
+        <item>专题收藏</item>
+        <item>记录</item>
+    </string-array>
+    <string-array name="yysj_yyxf_pkind_name_arr">
+        <item>粤语视界</item>
+        <item>影视先锋</item>
+        <item>蓝光影院</item>
+    </string-array>
+    <string-array name="sedm_pkind_name_arr">
+        <item>少儿动漫</item>
+    </string-array>
+    <string-array name="home_kind_name_arr">
+        <item>直播</item>
+        <item>回看</item>
+        <item>粤语视界</item>
+        <item>影视先锋</item>
+        <item>少儿动漫</item>
+        <item>热门推荐</item>
+        <item>蓝光影院</item>
+        <item>热门专题</item>
+        <item>设置管理</item>
+    </string-array>
+    <string-array name="yysj_kind_name_arr">
+        <item>电影部落</item>
+        <item>热播剧集</item>
+        <item>综艺巴士</item>
+        <item>最新电影</item>
+        <item>最新追剧</item>
+        <item>记录/收藏</item>
+    </string-array>
+    <string-array name="yyxf_kind_name_arr">
+        <item>记录/收藏</item>
+        <item>最新电影</item>
+        <item>最新追剧</item>
+        <item>电影部落</item>
+        <item>热播剧集</item>
+        <item>体育竞技</item>
+        <item>魅力记录</item>
+        <item>综艺巴士</item>
+    </string-array>
+    <string-array name="lgyy_kind_name_arr">
+        <item>蓝光影院</item>
+    </string-array>
+
+    <string name="previous_page">上一页</string>
+    <string name="next_page">下一页</string>
+    <string name="enshrine">收藏</string>
+
+
+    <string name="N_A">N/A</string>
+    <string name="close">Close</string>
+    <string name="sample">Sample</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="tracks">Tracks</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_render">Render</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="show_info">Info</string>
+    <string name="vdec">vdec</string>
+    <string name="fps">fps</string>
+    <string name="v_cache">v-cache</string>
+    <string name="a_cache">a-cache</string>
+    <string name="load_cost">load-cost</string>
+    <string name="seek_cost">seek_cost</string>
+    <string name="seek_load_cost">seek_load_cost</string>
+    <string name="tcp_speed">tcp_speed</string>
+    <string name="bit_rate">bit_rate</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+
+
+
+</resources>

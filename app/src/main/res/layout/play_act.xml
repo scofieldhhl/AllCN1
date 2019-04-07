@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mast.lib.views.VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:keepScreenOn="true" />
+
+    <ImageView
+        android:id="@+id/play_status_v"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/play_tips_v"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tips_bg"
+        android:gravity="center"
+        android:text="@string/end"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/play_bottom_ctrl_root_v"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/play_bottom_bg"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/play_list_v"
+            android:layout_width="1220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="35dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/play_ctrl_root_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/play_ctrl_title_root_v"
+                android:layout_width="800dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <TextView
+                    android:id="@+id/play_ctrl_title_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="left"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="38sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/play_ctrl_cur_time_v"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/play_ctrl_title_root_v"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="00:00:00"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/play_ctrl_speed_v"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/play_ctrl_title_root_v"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/play_ctrl_total_time_v"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/play_ctrl_speed_v"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="00:00:00"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <com.allcn.views.UiSeeKBar
+                android:id="@+id/seekbar"
+                android:layout_width="@dimen/seekbar_w"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/play_ctrl_title_root_v"
+                android:layout_marginLeft="@dimen/seekbar_marginLeft"
+                android:layout_marginTop="@dimen/seekbar_marginTop"
+                android:layout_toRightOf="@+id/play_ctrl_cur_time_v"
+                android:maxHeight="@dimen/seekbar_max_h"
+                android:minHeight="@dimen/seekbar_min_h"
+                android:progressDrawable="@drawable/seek"
+                android:splitTrack="false"
+                android:thumb="@drawable/seek_thumb"
+                app:numTextColor="#FFFFFF"
+                app:numTextSize="0dp"
+                app:numType="bottom"
+                app:numbackground="@drawable/kj" />
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

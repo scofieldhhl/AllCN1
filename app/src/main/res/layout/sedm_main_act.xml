@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sedm_main_title_v"
+        android:layout_width="200pt"
+        android:layout_height="90pt"
+        android:paddingBottom="8pt"
+        android:textSize="30pt"
+        android:layout_marginLeft="13pt"
+        android:background="@drawable/sedm_main_title_bg"
+        android:gravity="center_horizontal|bottom"
+        android:singleLine="true"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/sedm_home_net_v"
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:layout_marginTop="22pt"
+        android:layout_marginRight="19pt"
+        android:layout_toLeftOf="@+id/sedm_home_time_v"
+        android:background="@drawable/wifi_ok" />
+
+    <TextView
+        android:id="@+id/sedm_home_time_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18pt"
+        android:layout_marginRight="40pt"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="45pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sedm_main_sedh_v"
+        style="@style/SEDH_STYLE"
+        android:layout_width="451pt"
+        android:layout_height="338pt"
+        android:layout_below="@+id/sedm_main_title_v"
+        android:layout_marginLeft="53pt"
+        android:text="@string/sedh"
+        android:background="@drawable/sedm_main_sedh_bg"
+        android:nextFocusDown="@+id/sedm_main_mxzq_1_v"/>
+
+    <TextView
+        android:id="@+id/sedm_main_egyy_v"
+        style="@style/SEDH_STYLE"
+        android:layout_width="436pt"
+        android:layout_height="163pt"
+        android:layout_below="@+id/sedm_main_title_v"
+        android:layout_toRightOf="@+id/sedm_main_sedh_v"
+        android:text="@string/egyy"
+        android:background="@drawable/sedm_main_egyy_bg"
+        android:nextFocusDown="@+id/sedm_main_dmdy_v"/>
+
+    <TextView
+        android:id="@+id/sedm_main_xxjy_v"
+        style="@style/SEDH_STYLE"
+        android:layout_width="238pt"
+        android:layout_height="338pt"
+        android:layout_below="@+id/sedm_main_title_v"
+        android:layout_toRightOf="@+id/sedm_main_egyy_v"
+        android:text="@string/xxjy"
+        android:background="@drawable/sedm_main_xxjy_bg"
+        android:nextFocusDown="@+id/sedm_main_mxzq_8_v"
+        android:nextFocusRight="@id/sedm_main_dmdy_v"/>
+
+    <TextView
+        android:id="@+id/sedm_main_dmdy_v"
+        style="@style/DMDY_STYLE"
+        android:layout_below="@+id/sedm_main_egyy_v"
+        android:layout_toRightOf="@+id/sedm_main_sedh_v"
+        android:text="@string/dmdy"
+        android:background="@drawable/sedm_main_dmdy_bg"
+        android:nextFocusRight="@+id/sedm_main_dmjj_v"
+        android:nextFocusDown="@+id/sedm_main_mxzq_4_v"/>
+
+    <TextView
+        android:id="@+id/sedm_main_dmjj_v"
+        style="@style/DMDY_STYLE"
+        android:layout_below="@+id/sedm_main_egyy_v"
+        android:layout_toRightOf="@+id/sedm_main_dmdy_v"
+        android:text="@string/dmjj"
+        android:background="@drawable/sedm_main_dmjj_bg"
+        android:nextFocusDown="@+id/sedm_main_mxzq_6_v"
+        android:nextFocusUp="@id/sedm_main_egyy_v"
+        android:nextFocusRight="@+id/sedm_main_mxzq_1_v"/>
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_title_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sedm_main_sedh_v"
+        android:layout_marginLeft="80pt"
+        android:layout_marginTop="14pt"
+        android:gravity="center"
+        android:paddingBottom="20pt"
+        android:singleLine="true"
+        android:text="@string/mxzq"
+        android:textColor="#833610"
+        android:textSize="32pt" />
+
+    <ImageView
+        android:id="@+id/sedm_main_mxzq_root_v"
+        android:layout_width="1174pt"
+        android:layout_height="135pt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="53pt"
+        android:layout_marginBottom="43pt"
+        android:background="@drawable/mxzq_bg" />
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_1_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_marginLeft="94pt"
+        android:background="@drawable/sedm_main_mxzq_1_bg"
+        android:nextFocusUp="@+id/sedm_main_sedh_v"/>
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_2_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_toRightOf="@+id/sedm_main_mxzq_1_v"
+        android:background="@drawable/sedm_main_mxzq_2_bg"
+        android:nextFocusUp="@+id/sedm_main_sedh_v" />
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_3_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_toRightOf="@+id/sedm_main_mxzq_2_v"
+        android:background="@drawable/sedm_main_mxzq_3_bg"
+        android:nextFocusUp="@+id/sedm_main_sedh_v" />
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_4_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_toRightOf="@+id/sedm_main_mxzq_3_v"
+        android:background="@drawable/sedm_main_mxzq_4_bg"
+        android:nextFocusUp="@+id/sedm_main_dmdy_v" />
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_5_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_toRightOf="@+id/sedm_main_mxzq_4_v"
+        android:background="@drawable/sedm_main_mxzq_5_bg"
+        android:nextFocusUp="@+id/sedm_main_dmdy_v" />
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_6_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_toRightOf="@+id/sedm_main_mxzq_5_v"
+        android:background="@drawable/sedm_main_mxzq_6_bg"
+        android:nextFocusUp="@+id/sedm_main_dmjj_v" />
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_7_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_toRightOf="@+id/sedm_main_mxzq_6_v"
+        android:background="@drawable/sedm_main_mxzq_7_bg"
+        android:nextFocusUp="@+id/sedm_main_xxjy_v" />
+
+    <TextView
+        android:id="@+id/sedm_main_mxzq_8_v"
+        style="@style/MXZQ_ITEM_STYLE"
+        android:layout_toRightOf="@+id/sedm_main_mxzq_7_v"
+        android:background="@drawable/sedm_main_mxzq_8_bg"
+        android:nextFocusUp="@+id/sedm_main_xxjy_v"
+        android:nextFocusRight="@id/sedm_main_sedh_v"/>
+</RelativeLayout>

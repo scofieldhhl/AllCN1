@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/kind_movie_title_v"
+        android:layout_width="@dimen/kind_movie_title_v_w"
+        android:layout_height="@dimen/kind_movie_title_v_h"
+        android:background="@drawable/yy_sj_kind_movie_title_bg"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30pt"
+        android:text="@string/dy_bl"
+        android:textColor="@android:color/white"
+        android:textSize="40pt"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/kind_movie_page_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="44pt"
+        android:layout_marginRight="55pt"
+        android:layout_marginBottom="10pt"
+        android:text="0/0页"
+        android:textColor="@android:color/white"
+        android:textSize="23pt" />
+
+    <View
+        android:id="@+id/kind_movie_line_v"
+        android:layout_width="1060pt"
+        android:layout_height="2pt"
+        android:layout_gravity="right"
+        android:layout_marginTop="85pt"
+        android:layout_marginRight="36pt"
+        android:background="@drawable/kind_movie_line" />
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/kind_movie_left_arrow_v"
+        android:layout_width="@dimen/kind_movie_left_arrow_v_w"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/kind_movie_title_v_h"
+        android:background="@color/kind_movie_pkind_bg"
+        app:stv_isShowState="true"
+        app:stv_state_drawable="@drawable/kind_movie_left_arrow_icon"
+        app:stv_state_drawable_height="21pt"
+        app:stv_state_drawable_mode="top"
+        app:stv_state_drawable_padding_top="280pt"
+        app:stv_state_drawable_width="10pt"
+        android:visibility="gone" />
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/kind_movie_left_arrow_v2"
+        android:layout_width="@dimen/kind_movie_left_arrow_v_w"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/kind_movie_title_v_h"
+        android:background="@color/kind_movie_pkind_bg"
+        app:stv_isShowState="true"
+        app:stv_state_drawable_height="21pt"
+        app:stv_state_drawable_mode="top"
+        app:stv_state_drawable_padding_top="280pt"
+        app:stv_state_drawable_width="10pt"
+        android:visibility="gone" />
+
+    <!--第一级菜单-->
+    <!--<com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/kind_movie_pkind_v"
+        style="@style/KIND_MENU_RV_STYLE"
+        android:layout_width="0pt"
+        android:background="@color/kind_movie_pkind_bg"
+        android:tag="1" />-->
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/kind_movie_kind_v"
+        style="@style/KIND_MENU_RV_STYLE"
+        android:layout_marginLeft="@dimen/kind_movie_left_arrow_v_w"
+        android:background="@color/kind_movie_kind_bg"
+        android:tag="1" />
+
+    <LinearLayout
+        android:id="@+id/kind_movie_ckind_root_v"
+        android:layout_width="@dimen/kind_movie_kind_v_w"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/kind_movie_title_v_h"
+        android:background="@color/kind_movie_pkind_bg"
+        android:orientation="vertical">
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/kind_movie_search_v"
+            android:layout_width="@dimen/kind_movie_search_v_w"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23pt"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="right|center_vertical"
+            android:text="@string/search"
+            android:textColor="@color/kind_movie_search_text_color"
+            android:textSize="20pt"
+            app:stv_isShowState="true"
+            app:stv_state_drawable="@drawable/kind_movie_search_nof"
+            app:stv_state_drawable2="@drawable/kind_movie_search_f"
+            app:stv_state_drawable2_height="20pt"
+            app:stv_state_drawable2_mode="left"
+            app:stv_state_drawable2_width="20pt"
+            app:stv_state_drawable_height="20pt"
+            app:stv_state_drawable_mode="left"
+            app:stv_state_drawable_width="20pt" />
+
+        <View
+            android:id="@+id/kind_moive_search_line"
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23pt"
+            android:background="@drawable/search_line"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <com.allcn.views.FocusKeepRecyclerView
+            android:id="@+id/kind_movie_ckind_v"
+            style="@style/KIND_MENU_RV_STYLE"
+            android:layout_marginTop="0pt"
+            android:paddingTop="10pt"
+            android:tag="2" />
+    </LinearLayout>
+
+    <com.allcn.views.FocusKeepRecyclerView
+        android:id="@+id/kind_movie_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingLeft="48pt"
+        android:paddingTop="15pt"
+        android:paddingRight="35pt"
+        android:scrollbars="none"
+        android:tag="1"/>
+</merge>

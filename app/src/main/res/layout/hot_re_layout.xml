@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/hot_re"
+        android:textSize="45pt"
+        android:textStyle="bold"
+        android:layout_marginLeft="80pt"
+        android:layout_marginTop="23pt"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <ImageView
+        android:id="@+id/hot_re_net_v"
+        android:layout_width="46pt"
+        android:layout_height="50pt"
+        android:layout_marginTop="16pt"
+        android:layout_marginRight="233pt"
+        android:layout_gravity="right"
+        android:background="@drawable/wifi_ok"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/hot_re_time_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="14pt"
+        android:layout_marginRight="36pt"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="42pt"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/hot_re_dy_v"
+        style="@style/HOT_RE_DY_STYLE"
+        android:background="@drawable/hot_re_dy_bg"/>
+
+    <TextView
+        android:id="@+id/hot_re_zy_v"
+        style="@style/HOT_RE_DY_STYLE"
+        android:layout_marginTop="433pt"
+        android:background="@drawable/hot_re_zy_bg"/>
+
+    <TextView
+        android:id="@+id/hot_re_jj_v"
+        style="@style/HOT_RE_DY_STYLE"
+        android:layout_marginLeft="698pt"
+        android:background="@drawable/hot_re_jj_bg"
+        android:nextFocusRight="@id/hot_re_zy_v"/>
+
+    <TextView
+        android:id="@+id/hot_re_zt_v"
+        style="@style/HOT_RE_DY_STYLE"
+        android:layout_marginTop="433pt"
+        android:layout_marginLeft="698pt"
+        android:background="@drawable/hot_re_zt_bg"
+        android:nextFocusRight="@id/hot_re_dy_v"/>
+</merge>
